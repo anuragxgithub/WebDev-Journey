@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video and audio in HTML</title>
+</head>
+
+<body>
+    <video src="video.mp4" height="400" controls poster="download.jpg" muted></video>
+
+    <audio src="sachin.mp3" controls loop muted preload="none"></audio>
+
+    <!--
+    NOTE : preload attyribute is asked in interviews (in audio only)
+    preload attributes comes with 3 values:
+    none: This is the default value. It indicates that the browser should not preload the audio file at all. The audio file will only start downloading when the user initiates playback.
+
+    metadata: This value tells the browser to preload only the metadata of the audio file, such as its duration and basic information about the audio. This can be useful if you want to display the audio duration to the user without fully loading the audio data.
+
+    auto: This value instructs the browser to preload the entire audio file as much as possible without delaying the loading of other important page content. The browser will try to load the audio file in the background so that it's ready to play when the user decides to start it.
+    -->
+    <svg height="100" widht="100">
+        <circle cx="50" cy="50" r="40" fill="red" stroke="black" stroke-width="3"></circle>
+    </svg>
+    <svg>
+        <img src="img.svg" alt="Yellow solid circle">
+    </svg>
+
+    <iframe src="https://www.codewithharry.com/" frameborder="0" height="220" width="220"></iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/XZwBNDGuWGU?si=P7B2bIjJ_TanX-5t&amp;start=809" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+
+</html>

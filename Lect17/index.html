@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */
+        div {
+            /* background-color: red; */
+        }
+
+        /* 1) Class Selector */
+        .red {
+            background-color: red;
+        }
+
+        /* 2) ID Selector */
+        #pink {
+            background-color: pink;
+        }
+
+        /* 3) Child Selectors    (But note it will only be applied if 'p' is only inside div) */
+        /* div > p {  
+            color : white;
+            background-color: black;
+        } 
+        */
+        
+        /* 4) Descendant Selectors (This will select any descendent para of div)*/   
+        div p { 
+            color: red;
+            background-color: rgb(233, 176, 176);
+        }
+
+        /* 5) Universal Selectors (This will select all elements)*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 6) Pseudo Selectors */
+        a:visited {
+            color: yellow;
+        }
+        a:hover {
+            background-color: pink;
+        }
+        a:active {
+            background-color: brown;
+        }
+        p:first-child {  /*whereever p is first child of its parent this prop. will be applied*/
+            background-color: aqua;
+        }
+
+    </style>
+</head> 
+
+<body>
+    <div class="red">I am a div</div>
+    <div>
+        <article>
+            <p>I am para inside article which is inside div</p>
+        </article>
+        <p>I am a para inside div</p>
+    </div>
+    <div id="pink">I am another div</div>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.facebook.com">Go to Facebook</a>
+    <main>
+        <p>I am first child</p>
+        <p>I am second child</p>
+        
+    </main>
+</body>
+
+</html>
