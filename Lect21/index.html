@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- https://www.codewithharry.com/tutorial/css-specificity?gad_source=1&gad_campaignid=22773699355&gbraid=0AAAAAqQsM_3Wdds0I1XFX_5mEI-wv8zWP&gclid=Cj0KCQjwzaXFBhDlARIsAFPv-u-ypW45WICVtG8LqW25Ep04hucFFkikSl9tlxEWLDv6cGYdRSIV6KMaAn67EALw_wcB -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+/* 
+'!important' flag > Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector
+
+Specificity Calculation:
+Assign "points" -->
+
+Universal Selector: 0
+Element selectors and pseudo-elements: 1
+Class selectors, attribute selectors, and pseudo-classes: 10
+ID selectors: 100
+Inline styles: 1000
+!important : 10,000 
+*/
+        * {
+            color: magenta;
+        }
+        .cred {
+            color: red;
+        }
+
+        .cblue {
+            color: blue;
+        }
+
+        .cpink {
+            color: pink;
+        }
+
+        h1 {                /*Element selector*/
+            color: yellow !important;
+        }
+
+        h1.cblue {   /*Element + class selector  || Specificity Value = 1 + 10 = 11*/
+            color: blue;
+        }
+
+        /* The specificity of this selector is 1 + 10 + 10 + 10 + 10 = 41  */
+        a.harryclass.rohan-class[href]:hover {
+            color: blueviolet;
+        }
+        /* 
+        a --> elememt selector
+        harryclass -> class selector
+        harryclass -> class selector
+        rohan-class -> class selector
+        [href] -> attribute selector
+        hover -> pseudo class selector
+        */
+
+    </style>
+</head>
+
+<body>
+    <h1 class="cred cblue cpink" style="color: greenyellow">CSS Specificity</h1>
+</body>
+
+</html>
