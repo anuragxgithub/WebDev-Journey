@@ -1,0 +1,26 @@
+Lect2 ->                 
+Lect4 ->                 
+Lect5 ->                 
+Lect7 ->                 
+Lect8 ->                 
+Lect9 ->                 
+Lect10 ->                 
+Lect11 ->                 
+Lect12 ->                 
+Lect13 ->                 
+Lect14 ->                 
+Lect15 ->                 
+Lect17 ->                 
+Lect18 ->                 
+Lect19 ->                 
+Lect20 ->                 
+Lect21 ->                 
+Lect22 ->                 
+Lect23 ->                 
+Lect24 ->                 
+Lect25 ->                 
+Lect26 ->                 
+Lect28 ->                 
+Lect29 ->                 
+Lect30 ->  CSS variables ⚠️
+Lect31 ->  Media Queries

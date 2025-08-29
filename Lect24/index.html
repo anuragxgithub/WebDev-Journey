@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadows and Outline</title>
+    <style>
+        /* box-shadow: h-offset v-offset blur spread color inset; */
+        .box {
+            border: 2px solid black;
+            padding: 34px;
+            box-shadow: 12px 8px 15px 3px pink;
+        }
+        /* text-shadow: h-offset v-offset blur color; */
+        .text-shadow {    
+            text-shadow: 5px 2px 5px red;text-shadow: 5px 2px 5px #7d4d4d;
+            /* An outline is a line that is drawn around elements, outside the borders, to make the element "stand out". It's commonly used for accessibility purposes, like highlighting focused elements. */
+            outline: 2px solid black;/* outline: width style color; */
+            border: 2px solid yellow;
+            outline-offset: 22px;  /*You can set the space bw the edge of border and outline*/
+            border-radius: 10px;  /*Outline follows the border so it will also get curved*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am a box
+    </div>
+    <p class="text-shadow">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta atque veritatis veniam praesentium. Deserunt voluptatem in totam, culpa hic corrupti fugit aliquam quos?
+    </p>
+</body>
+</html>

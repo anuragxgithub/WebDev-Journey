@@ -1,0 +1,66 @@
+
+<!--
+Media Query: Media queries are used to make it possible to define different style rules for different media types.
+Syntax:
+@media not|only mediatype and (media feature) and (media feature) {
+CSS-Code;
+Here are some commonly used media features:
+
+Value	Description
+orientation	Orientation of the viewport. Landscape or portrait
+max-height	Maximum height of the viewport
+min-height	Minimum height of the viewport
+height	Height of the viewport (including scrollbar)
+max-width	Maximum width of the viewport
+min-width	Minimum width of the viewport
+width	Width of the viewport (including scrollbar)
+}
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+
+    <style>
+        body {
+            background-color: pink;
+        }
+
+        @media only screen and (max-width: 500px) {
+            body {
+                background-color: red;
+            }
+            .boxes {
+                flex-direction: column;
+            }
+        }
+        @media screen and (orientation: landscape) {
+            .boxes {
+                border: 2px solid purple;
+            }
+        }
+        .box {
+            width: 244px;
+            height: 244px;
+            background-color: steelblue;
+            padding: 5px;
+            margin: 5px;
+        }
+        .boxes {
+            display: flex;
+        }
+
+    </style>
+</head>
+<body>
+    <div>Hey i am a pink body guy</div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>

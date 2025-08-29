@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .parent {
+            border: 3px solid purple;
+            padding: 23px;
+            margin: 43px;
+            position: relative;
+        }
+        .box {
+            height: 200px;
+            width: 80vw;
+            border: 2px solid black;
+            padding: 3px;
+            margin: 3px;
+        }
+        .box0 {
+            background-color: brown;
+            position: sticky;
+            height: 50px;
+            top: 23px;
+            z-index: 5;
+        }
+        .box1 {
+            background-color: purple;
+            position: absolute;  /*The element is positioned relative to its first positioned(not static) ancestor element (in out case its ancestor div is positioned if div with parent class is not then it will go to body get rejected then go to html which is root so can
+            t go above so position according to it(viewport))*/
+            top: 30px;
+            z-index: 3;         /*Decides whether it is in foreground or background or on which layer*/
+        }
+        .box2 {
+            background-color: aqua;
+            position: relative; /*The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position */
+            z-index: 2;   
+        }
+        .box3 {
+            background-color: azure;
+            position: fixed; /*	The element is positioned relative to the browser window*/
+            bottom: 0px;
+            left: 8vw;
+            height: 111px;
+            z-index: 4;
+        }
+        .box4 {
+            background-color: antiquewhite;
+            height: 800px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box box0"></div>
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+    
+</body>
+</html>
+
+
+<!--
+Note:
+The position property specifies the type of positioning method used for
+an element (static, relative, absolute, fixed, or sticky).
+We can use top, bottom, left & right property on any element to style in css only
+if we set "postion" property of that element other than static 
+(which is by default)
+
+⚠️Exception: transform, filter, or perspective properties can also make an element appear as positioned
+
+In Short:
+Static: by default elements are placed in usual flow
+Sticky : behave as static until hit by scroll and from that moment it sticks
+Absolute: positioned according to its first positioned (non-static) ancestor
+Relative: postioned according to its normal position
+Fixed: fixed at one place related to the brower's window 
+-->

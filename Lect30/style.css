@@ -1,0 +1,42 @@
+/*
+var() fun. is used to insert variables in css.
+we can declare varibles in two ways : Global and Local
+1. GLOBAL : Global vars are declared inside :root selector and var name starts with --.
+2. LOCAL: : Local variables can be defined inside any selector and it will be accecible only inside that selec.
+
+Mostly css variables are used when it comes to color your design instead of copy pasting the same
+color you can put them in varible.
+
+*/
+
+:root {  /*Vars inside it are global variable*/
+    --color: rgb(60, 60, 255);
+    --seccolor: rgb(118, 118, 212);
+    --defpad: 34px;         /*Vars can also hold value of different types (strings,nums,etc)*/
+    --opacityBhi: 0.8;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+.nav {
+    background-color: var(--color);
+}
+.container {
+    opacity: var(--opacityBhi);
+    background-color: var(--seccolor);
+}
+
+ul {
+    display: flex;
+}
+
+ul li:first-child {
+    --color: rgb(255, 119, 0);  /*Local Variable*/
+    background-color: var(--color);
+}
+
+li {
+    padding: var(--defpad);
+    list-style: none;
+}

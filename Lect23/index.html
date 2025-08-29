@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <!--Inline Elements are like words in a sentence they flow horizontally We can't fix their width or height-->
+    <!--Block Elements take up the full width available in its containing element. 
+        Always starts with a new line. 
+        Take that much height in which content can be visible.-->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .box {
+            border: 2px solid blue;
+            display: inline;
+            width: 344px; /*Note: width can't be applied to inline element*/
+            padding: 45px;  /*Note: Padding on top will not be considered*/
+            margin: 34px; /*Again top margin won't be considered */
+            /* you can change dispaly property to "inline-block" then you can put widht & top padding/margin  */
+        }   
+        .box1 {
+            /* display: none;   removes the element*/  
+            /* visibility: hidden;  Only hides space of it remain intact */
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        I am a box
+    </div>
+    <div class="box">
+        Also a nice box
+    </div>
+    <span>I am a good</span>
+    <span>boy</span>
+</body>
+</html>
