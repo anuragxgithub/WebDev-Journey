@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        .box:first-child {
+            background-color: rgb(135, 107, 107);
+        }
+        /* .boxes::first-line {
+            color: rgb(28, 191, 255);
+        } */
+        /* .boxes {
+            color: blue;
+            border: 2px solid black;            
+        } */
+
+        /*Attribute Selector*/
+        p, a, .box, [data-color="primary"] {  /*All p, a, .box, and element whose data-color is equal to primary will get the defined rule*/
+            padding-top: 45px;
+        }
+
+        /* .box:nth-child(odd) {
+            background-color: blueviolet;
+        } */
+
+        /* .box:nth-last-child(2) {
+            background-color: red;
+        } */
+
+        /* The CSS ::before 'pseudo-element' allows you to insert content before the actual content of a selected element.
+        (do the work dynamically)*/
+        .boxes::before {  /*⚠️ Not a selector*/
+            content: "Anurag is a good boy";
+            color: red;
+        }
+        .boxes::after {
+            content: "Sigma Course is also good";
+            color: blue;
+        }
+        ::selection {
+            color: rgb(239, 160, 173);
+            background-color: rgb(235, 209, 214);
+        }
+
+        .box::first-letter {
+            color: rgb(0, 115, 255);
+        }
+        input::placeholder {
+            color:grey;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolore adipisci eos. Doloremque, minus pariatur? Ad illum amet dolorum magnam doloremque eaque sed, similique magni architecto! Perspiciatis soluta earum dolores adipisci fugit labore ad dignissimos a obcaecati inventore ipsa, sit nemo molestias, quis laboriosam eveniet? Quas recusandae sit minus consequuntur libero amet dicta aut nemo ipsa aspernatur officiis reiciendis quod ab cumque voluptatum fugit dolorem, quis iste labore culpa, placeat ipsam dolore deleniti assumenda? Dignissimos reiciendis, repellat ut quae ipsum dolorem odio quo quos optio similique, ea dolore minima perspiciatis et voluptatum eius aut cupiditate, ipsam cum. Fugit, recusandae aut?</div>
+        <div class="box" data-color="primary">I am a box</div>
+        <div class="box">I am a box</div>
+        <input type="text" placeholder="Type your name here..">
+    </div>
+</body>
+</html>

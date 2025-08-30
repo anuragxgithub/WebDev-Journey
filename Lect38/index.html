@@ -1,0 +1,103 @@
+
+
+<!-- https://miro.medium.com/v2/resize:fit:1100/format:webp/1*ubDrM-3m22gLF_pZ4DCdMw.png -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        /* NOTE: cross axis and main axis depends on the flex-direction property
+        basically cross axis is perpendicular to the flex direction */
+        .container {
+            border: 2px solid black;
+            display: flex;  /*The direction of flex by default is left to right*/
+            height: 80vh;
+            justify-content: center; /*Aligns flex items along the main axis of the current line of the flex container.*/
+            align-items: center;  /*Aligns flex items along the cross axis of the current line of the flex container.*/
+            /* flex-direction: column; */
+            flex-direction: row;  /*by default*/
+            flex-wrap: wrap;
+            /* align-content: center; */
+            /* there is no justify-items in flexbox; */
+            justify-content: flex-start;
+            align-content: center;
+
+            /* gap: 30px; gap between flex items (horizontal and vertical) */
+            row-gap: 10px;
+            column-gap: 20px;
+        }
+        .item {
+            width: 60px;
+            height: 60px;
+            background-color: pink;
+            border: 2px solid grey;
+            margin: 5px;
+        }
+
+        /*
+        Above properties works on container
+        Now see the properties which works on items in flexbox
+        */
+        /*Order Property: used to specify the order in which items should appear
+                          by dafault each items order is 0
+                          lower order value item appear first */
+        .order-1 {
+            order: -11;  /*default value is 0*/
+        }
+        .order-2 {
+            order: 2;
+        }
+        .order-3 {
+            order: 100;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item order-3 ">1</div>
+        <div class="item">2</div>
+        <div class="item item3">3</div>
+        <div class="item order-1">4</div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item order-2">13</div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item order-2">24</div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>
