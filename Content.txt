@@ -21,12 +21,16 @@ Lect24 ->
 Lect25 ->                 
 Lect26 ->                 
 Lect28 ->  CSS Position Property            
-Lect29 ->                 
+Lect29 ->  Card Design (Exercise 3)          
 Lect30 ->  CSS variables ⚠️
 Lect31 ->  Media Queries
-Lect33 ->  
-Lect34 -> 
+Lect33 ->  Exercise 4
+Lect34 ->  Float and Clear
 Lect35 ->  More on CSS selectors
-Lect37 ->
+Lect37 ->  Exercise 5
 Lect38 ->  FLEXBOX
-Lect39 -> Grid 
+Lect39 ->  Grid 
+Lect41 ->  Exercise 6
+Lect42 ->  CSS Transformations
+Lect44 -> Exercise 7
+Lect

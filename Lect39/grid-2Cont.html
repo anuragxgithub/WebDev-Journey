@@ -1,0 +1,46 @@
+<!--
+Here doing same thing which we did in grid-2.html.
+But this time instead of using pixels we will use fr unit.
+-->
+<!-- Grid Area -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container {
+            width: 80vw;
+            height: 100vh;
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr; /*basically 1 fraction of the available space*/
+            /* grid-template-columns: repeat(3, 1fr); */
+            /* grid-template-rows: 1fr 2fr 1fr; */
+            /* gap: 34px; */
+            row-gap: 15px;
+            column-gap: 20px;
+            justify-items: center;  /*Note: Here they will be centered in their respective grid area*/
+            align-items: center;
+            place-content: center; /*Note: Here they will be centered as a whole grid. Also place-content: center places content in center vertically and horizontally*/
+        }
+        .container > div {
+            border: 2px solid red;
+            height: 55px;
+            width: 55px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>
