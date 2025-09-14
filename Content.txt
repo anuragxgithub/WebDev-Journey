@@ -33,4 +33,10 @@ Lect39 ->  Grid
 Lect41 ->  Exercise 6
 Lect42 ->  CSS Transformations
 Lect44 -> Exercise 7
-Lect
+Lect45 -> Transitions
+Lect46 -> Animations
+Lect48 -> Exercise 8
+Lect49 -> Object-Fit
+Lect50 -> CSS Filters
+Lect52 -> Figma Basics
+Lect53 -> Netflix Clone

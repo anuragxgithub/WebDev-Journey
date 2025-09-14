@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 8</title>
+    <style>
+        .box {
+            height: 121px;
+            width: 121px;
+            background-color: red;
+            border-radius: 70px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            animation: bounceEffect;
+            animation-duration: 5s;
+            animation-timing-function: ease-out;
+            animation-delay: 0.5s;
+            animation-fill-mode: forwards;
+            animation-direction: alternate;
+        }
+
+        .container {
+            position: relative;
+            height: 80vh;
+            width: 80vw;
+            background-color: rgb(87, 87, 186);
+        }
+
+        @keyframes bounceEffect {
+            0%{
+            }
+            17%{
+                transform: translateX(12vw) translateY(-300px);
+            }
+            34% {
+                transform: translateX(24vw);
+            }
+            51% {
+                transform: translateX(36vw) translateY(-300px);
+            }
+            68% {
+                transform: translateX(48vw);
+            }
+            85% {
+                transform: translateX(60vw) translateY(-300px);
+            }
+            100% {
+                transform: translateX(72vw);
+            }
+
+        }
+ 
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="box">
+        </div>
+    </div>
+    <!-- 
+    
+     -->
+</body>
+
+</html>
+
+
+
+
+<!-- NOTE:
+transform: translateX(calc(80vw-121px));
+❌ is not correct
+
+Instead, it should be written with spaces:
+
+transform: translateX(calc(80vw - 121px));
+✅ correct 
+-->

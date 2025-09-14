@@ -1,0 +1,45 @@
+
+<!-- 
+The 'filter' property defines visual effects (like blur and saturation) to an element (often <img>).
+
+Note: The filters that use percentage values (i.e. 75%), also accept the value as decimal (i.e. 0.75).
+
+1) blur(px)	Applies a blur effect to the image. A larger value will create more blur.
+
+If no value is specified, 0 is used.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters</title>
+    <style>
+        /* p {
+            background-color: azure;
+            border: 2px solid black;
+            filter: blur(0.5px);
+            padding: 10px;
+        } */
+        .img1 {
+            filter: blur(1px);
+        }
+        .img2 {
+            filter: contrast(120%);
+            filter: invert(80%);
+        }
+        .img3 {
+            filter: brightness(130%);
+            filter: grayscale(100%);
+        }
+    </style>
+</head>
+<body>
+    <!-- <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, voluptatum officia consectetur veritatis doloremque sequi ipsam rem facere eveniet error delectus provident tenetur culpa, optio esse vitae repellendus totam vero laboriosam libero laudantium rerum?
+    </p> -->
+    <img src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?t=st=1757599299~exp=1757602899~hmac=510a8c1e50753c9ed6b4ba5de79b511e95e84b4269de22533eeb6041175c9c1a&w=1480" class="img1" alt="" height="400px" width="500px">
+    <img src="https://imgv3.fotor.com/images/slider-image/A-clear-image-of-a-woman-wearing-red-sharpened-by-Fotors-image-sharpener.jpg" class="img2" alt="" height="400px" widht="500px">
+    <img src="https://royalchessmall.com/cdn/shop/articles/cover_page_34e1fe2c-f3de-46fd-b3de-142396b99c5c.png?v=1751022465" class="img3" alt="">
+</body>
+</html>

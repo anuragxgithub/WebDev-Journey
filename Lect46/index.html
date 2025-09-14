@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        .container {
+            width: 50vw;
+            height: 40vh;
+            background-color: bisque;
+        }
+        .box {
+            width: 5vw;
+            height: 4vh;
+            background-color: aqua;
+            text-align: center;
+
+            animation: multipleAnimations;
+            animation-duration: 3s;
+            animation-timing-function: cubic-bezier(0, 1.24, 0.57, 0.94);
+            animation-delay: 1s;
+            animation-iteration-count: 1;
+            /* animation-direction: reverse; */
+            animation-play-state: running;
+            animation-fill-mode: forwards;  /* retains the final animation state */
+            
+            /* Shorthand */
+            /* animation: meraAnimation 3s ease-in-out 1s 1 reverse backwards; */
+            /* you can apply  */
+        }
+
+        @keyframes meraAnimation {
+            from {
+                background-color: red;
+            }
+            to {
+                background-color: yellow;
+                transform: translateX(70vw);
+            }
+        }
+        @keyframes multipleAnimations {
+            0%{  /* means when 0% animation is completed apply this effect*/
+                transform: rotate(100deg);
+            }
+            20%{  /* means when 20% animation is completed apply this effect*/
+                transform: rotate(200deg);
+            }
+            50%{
+                transform: rotate(220deg);
+            }
+            80%{
+                transform: rotate(300deg);
+            }
+            100%{
+                transform: rotate(310deg);
+            }
+        }
+        /* NOTE: you can't put two different animations by creating 2 diff. keyframes on the same element
+        b/z one will override the other (but if you use shorhand of animation property you can do this)
+        but you can apply multiple animations on a element at different stages during the completion
+        inside one keyframe.
+        Also lets say to apply translateX and Y simultaneously
+        Dont write them in 2 different line otherwise got overridded
+        rathe write in single line eg. transform: translateX() tanslateY()
+         */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>

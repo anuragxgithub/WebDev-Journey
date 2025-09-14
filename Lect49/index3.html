@@ -1,0 +1,38 @@
+
+<!-- 
+NOTE: if background image is smaller than the container then by default it wil repeat 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Fit</title>
+    <style>
+        .container {
+            height: 567px;
+            width: 688px;
+            border: 2px solid black;
+            background-color: azure;
+            background-image: url("https://cdn.staticneo.com/w/mario/thumb/d/d3/Small_Mario_SM3DL.png/200px-Small_Mario_SM3DL.png");
+            /* background-repeat: no-repeat; */
+            background-repeat: repeat-x;
+            /* background-repeat: repeat-y; */
+            background-position: center;
+            /* You can explore other properties 
+            but mostly these are used 
+            you can checkout background-clip */
+        }
+
+        img {
+            height: 567px;
+            width: 688px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    </div>
+</body>
+</html>

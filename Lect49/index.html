@@ -1,0 +1,53 @@
+<!-- 
+    The CSS object-fit property is used to specify how an <img> or <video> should be resized to fit its container.
+        
+        Used to preserve the aspect ratio of img or vid
+-->
+<!-- 
+Here is where the object-fit property comes in. The object-fit property can take one of the following values:
+
+fill - This is default. The image is resized to fill the given dimension. If necessary, the image will be stretched or squished to fit
+contain - The image keeps its aspect ratio, but is resized to fit within the given dimension
+cover - The image keeps its aspect ratio and fills the given dimension. The image will be clipped to fit
+none - The image is not resized
+scale-down - the image is scaled down to the smallest version of none or contain
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Fit</title>
+    <style>
+        .container {
+            height: 567px;
+            width: 688px;
+            border: 2px solid black;
+            background-color: azure;
+        }
+
+        img {
+            /* IMPORTANT */
+            /* height: 480px;
+            width: 500px;
+            object-fit: cover;   */
+            /*Note: the above cover property means image will cover height of width of 480px and 500px respectively in this 
+            size it will cover such that its aspect ratio is maintained*/
+            height: 567px;
+            width: 688px;
+            /* object-fit: contain; */
+            object-fit: cover;
+            object-position: bottom left;
+            object-position: 10px 20px;  
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    </div>
+</body>
+</html>
