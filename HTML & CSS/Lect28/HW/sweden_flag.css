@@ -1,0 +1,30 @@
+.flag {
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    background-color: #FECC02;
+    position: relative;
+}
+.box1 , .box2 {
+    width: 80px;
+    height: 80px;
+    background-color: #006AA7;
+}
+.box2 {
+    position: absolute;
+    bottom: 0px;
+}
+.box3 , .box4 {
+    width: 180px;
+    height: 80px;
+    background-color: #006AA7;
+    position: absolute;
+}
+.box3 {
+    top: 0px;
+    right: 0px;
+}
+.box4 {
+    right: 0px;
+    bottom: 0px;
+}

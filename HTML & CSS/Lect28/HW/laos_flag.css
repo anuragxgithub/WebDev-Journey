@@ -1,0 +1,24 @@
+.flag {
+    height: 200px;
+    width: 300px;
+    background-color: #CE1126;
+    margin: auto;
+    position: relative;
+}
+
+.box {
+    height: 80px;
+    width: 300px;
+    background-color: #002868;
+    position: absolute;
+    top: 60px;
+}
+.circle {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 10px;
+    right: 120px;
+}

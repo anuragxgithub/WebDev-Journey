@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    background-color: orange;
+    /* 1. STATIC*/
+    /* position: static;     no change bcz it is by default */
+    
+    /* 2. RELALTIVE */
+    position: relative;
+    left: 100px;
+    /* top bottom right */
+    /* NOTE: The original space of the element which is marked relative is conserved
+    even if the element is moved somewhere. */
+}
+h3 {
+    /* 3. FIXED */
+    background-color: pink;
+    position: fixed;
+    top: 0px;
+    left: 300px;
+}
+
+h4 {
+    /* 4. STICKY     */
+    background-color: brown;
+    position: sticky;
+    top: 0px;   /*Jaise hi is element ka top 0px ho jae make it sticky*/
+}
+
+p {
+    background-color: lightgreen;  
+    position: absolute;
+    /*NOTE: As we mark any element as absolute it leave its place and its original space is occupied by
+            other(next) element and it becomes free now.
+            now if we try to move it somewhere it will move as follows:width: width:
+            1. if any of its ancestor is positioned(absolute, relative, fixed, sticky) then it will move
+               according to that ancestor.
+            2. if none of its ancestor is positioned then it will move according to the viewport(window).
+            */
+    top: 20px;
+    /* NOTE: in this case ancestor of p is div which is not positioned now it move to other ancestor which is body
+    it is also not positioned hence now p will be set as according to viewport */
+}
+
+/*
+NOTE:
+
+Position: absolute / fixed / sticky
+
+- The element is taken out of the normal flow (except in some cases with `sticky` before it sticks).
+- It no longer occupies its original space.
+- Other elements behave as if that element doesn’t exist there and will flow into that gap.
+
+So: space is NOT CONSERVED.  (sirf relative me conserve rhta hai original space)
+*/
