@@ -1,0 +1,40 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 60vh;
+    width: 60vw;
+    gap: 10px; 
+}
+.aside {
+    background-color: lightgreen;
+    grid-row: 1/4;
+}
+.top-middle {
+    background-color: lightgreen;
+    grid-column: 2/4;
+}
+.top-right {
+    background-color: rgb(224, 110, 110);
+}
+.middle-1 {
+    background-color: orange;
+}
+.middle-2 {
+    background-color: rgb(224, 110, 110);
+}
+
+.right-aside {
+    background-color: lightgreen;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 4;
+    grid-column-end: 5;
+
+}
+.middle-3 {
+    background-color: rgb(224, 110, 110);
+}
+.middle-4 {
+    background-color: orange;
+}

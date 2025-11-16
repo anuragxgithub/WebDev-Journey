@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="project_07.css">
+</head>
+<body>
+    <!-- Astrology -->
+    <div class="container">
+        <div class="head">
+            Astrology Insights
+        </div>
+        <form id="form">
+            <div class="pair">
+                <div class="label"><label for="name">First name:</label></div>
+                <input type="text" id="name" required>
+            </div>
+            <div class="pair">
+                <div class="label"><label for="surname">Surname:</label></div>
+                <input type="text" id="surname" required>
+            </div>
+            <div class="pair">
+                <div class="label"><label for="day">Date of Birth (Day):</label></div>
+                <input type="number" id="day" required>
+            </div>
+            <div class="pair">
+                <div class="label"><label for="month">Month:</label></div>
+                <input type="number" id="month" required>
+            </div>
+            <div class="pair">
+                <div class="label"><label for="year">Year:</label></div>
+                <input type="number" id="year" required>
+            </div>
+            <div><button type="submit">Get Insights</button></div>
+        </form>
+        <div id="output"></div>
+    </div>
+</body>
+<script src="project_07.js"></script>
+</html>

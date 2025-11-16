@@ -1,0 +1,57 @@
+body {
+    background-color: black;
+}
+.container {
+    background-color: aquamarine;
+    display: flex;
+    padding: 5px;
+    gap: 5px;
+    font-size: 20px;
+}
+.first {
+    height: 300px;
+    width: 300px;
+    background-color: red;
+}
+.second {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.child1 {
+    height: 140px;
+    background-color: blueviolet;
+}
+.child2 {
+    height: 140px;
+    background-color: chocolate;
+}
+
+/* grid */
+.container2 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    font-size: 20px;
+    width: 600px;
+    height: 300px;
+    gap: 5px;
+    background-color: aquamarine;
+    padding: 5px
+}
+.First {
+    background-color: red;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.Second {
+    background-color: blueviolet;
+    /* margin: 0px 0px 5px 0px; */
+}
+.Third {
+    background-color: chocolate;
+    /* margin: 5px 0px 0px 0px; */
+
+}

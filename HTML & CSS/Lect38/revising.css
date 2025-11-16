@@ -1,0 +1,37 @@
+.container {
+    background-color: antiquewhite;
+    display: flex;  /*parent can manage how its children should be placed*/
+    height: 350px;
+    justify-content: center;  /*horizontal alignment*/
+    align-items: center;  /*vertical alignment*/
+    /* justify-content: space-around; */
+    /* flex-wrap: wrap; by default flex items are in a single line, if we want to wrap them to next line then use this property */
+    gap: 5px;  /*gap between flex items*/
+}
+.box {
+    height: 100px;
+    width: 100px;
+    /* margin: 5px; */
+}
+
+.first {
+    background-color: red;
+    /* Can we apply any properties to chilren also? Yes!! */
+    flex-grow: 1;  /*it will take all the available space in the container*/
+    /* basically it says: available space me se 1 tukda mujhe do */
+}
+.second {
+    background-color: blue;
+    flex-grow: 2; /*it will take double the space as compared to first box*/
+    /* available space me se 2 tukda mujhe do */
+    /* considering both first and second grow there will be 3 parts of available space from which 1 part is for first class div and other 2 for second div */
+}
+.third {
+    background-color: green;
+    flex-shrink: 2; /*it will shrink twice as much as compared to other flex items*/
+}
+.fourth {
+    background-color: yellow;
+    flex-basis: 200px; /*it will override the size in the main axis direction*/
+    align-self: flex-end; /*it will 'override' the 'align-items' property of parent and align itself to the end of the container*/
+}

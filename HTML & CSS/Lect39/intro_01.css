@@ -1,0 +1,37 @@
+body {
+    background-color: rgb(25, 17, 17);
+}
+.container {
+    display: grid;
+    /*Note in grid you have to specify the num of rows and cols*/
+    /* grid-template-rows: 200px 200px;  
+    grid-template-columns: 200px 200px; */
+    grid-template-rows: 1fr 1fr;  /*This prevents overflow of boxes from container*/
+    grid-template-columns: 1fr 1fr; /*Means (2 fractions banenge) jitna space available hai usme se 1 fraction first col ko de do and other fraction second col ko*/   
+    padding: 10px;
+    gap: 20px;
+    border: 2px solid white;
+    /* NOTE: you can set height and widht of container by default it is taking full 'widht' */
+    width: 400px;
+    height: 400px;
+    background-color: aquamarine;
+    font-size: 30px;
+    /* But see after fixing the container size the boxes may go outside of the container
+    because of padding/marign on them(as they exceed container's size) 
+    We can prevent this overflows of boxes by setting the rows and columns of grid using 'fr' unit
+    see above
+    */
+}
+.first {
+    background-color: aliceblue;
+}
+.second {
+    background-color: skyblue;
+}
+.third {
+    background-color: lightpink;
+}
+.fourth {
+    background-color: lightgreen;
+}
+
