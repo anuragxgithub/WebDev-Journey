@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <form action="">
+            <h1>Check Current Weather</h1>
+            <div class="info">
+                <div class="country-info">
+                    <div>Select Country</div>
+                    <div class="country-container">
+                        <img src="">
+                        <select name="" id="country">
+                        </select>
+                    </div>  
+                </div>
+                <div class="location-info">
+                    <div>Enter City Name</div>
+                    <div class="location-container">
+                        <input type="text" id="city-name">
+                    </div>
+                </div>
+            </div>
+            <div class="btn">
+                <button>Get Result</button>
+            </div>
+            </form>
+
+            <div class="result">
+                <div class="curr-temp"></div>
+                <div class="feels-like"></div>
+                <div class="wind-speed"></div>
+                <div class="error"></div>
+            </div>
+        </div>
+    </div>
+    <script src="countryCodes.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffc8dd;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+}
+
+h1 {
+    color: #b981da;
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 153, 255, 0.3);
+    font-size: 8vmin;
+    color: #a2d2ff;
+    background-color: white;
+}
+
+#reset-btn {
+    padding: 0.7rem;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #4a9dea;
+    background-color: white;
+    box-shadow: 0 0 1rem rgba(0, 153, 255, 0.3);
+}
+#new-game-btn {
+    padding: 0.7rem;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #4a9dea;
+    background-color: white;
+    box-shadow: 0 0 1rem rgba(0, 153, 255, 0.3);
+}
+.hide {
+    display: none;
+}
+
+#msg {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}

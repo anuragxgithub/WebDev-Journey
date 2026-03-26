@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main {
+    background-color: #ff5200;
+}
+
+.logo img {
+    width: 10rem;
+    height: 3rem;
+    padding-left: 9.5rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.1rem 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.nav-options {
+    display: flex;
+    gap: 2rem;
+    padding-right: 10.5rem;
+}
+
+.nav-options a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+}
+.nav-options div {
+    height: 54px;
+    text-align: center;
+    line-height: 54px;
+}
+.get-the-app-btn {
+    border: 1px solid white;
+    border-radius: 1rem;
+    text-align: center;
+    line-height: 54px;
+    padding: 0 1.2rem;
+    display: flex;
+    gap: 0.4rem;
+}    
+.get-the-app-btn img {
+    width: 1rem;
+    height: 1rem;
+    filter: brightness(0) invert(1);
+    padding-top: 1.2rem;
+    cursor: pointer;
+}
+
+.signin-btn {
+    background-color: black;
+    padding: 0 2.6rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.middle {
+    padding: 64px 0 32px 0;
+}
+
+.punch-line {
+    width: 60%;
+    font-family: poppins;;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+}
+.main-content-text {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.main-content-boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 24px auto 0px auto;
+}
+.location-container {
+    background-color: white;
+    display: flex;
+    gap: 5px;
+    padding: 1rem;
+    border-radius: 16px;
+}
+.location-container input {
+    border: none;
+    font-size: 0.9rem;
+    font-family: poppins;
+    font-weight: 500;
+    width: 13rem;
+    color: #9a9b9e;
+    outline: none;
+    caret-color: #ff5200;
+}
+
+.search-restro {
+    display: flex;
+    background-color: white;
+    gap: 1rem;
+    color: #9a9b9e;
+    font-family: poppins;
+    font-weight: 600;
+    gap: 5px;
+    padding: 1rem;
+    border-radius: 16px;
+}
+.search-restro div {
+    padding-right: 6rem;
+}
+
+.search-restro svg {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.cards img {
+    width: 25rem;
+    /* height: 24rem; */
+    height: auto;
+}
+.cards-container {
+    display: flex;
+    justify-content: center;
+    background-color: #ff5200;
+}
+.cards {
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.floating-banner {
+    display: flex;
+    justify-content: space-between;
+}
+.floating-banner img {
+    height: 30rem;
+    width: 15.5rem;
+    position: absolute;
+}
+
+.veggies {
+    top: 6rem;
+}
+.sushie {
+    top: 6rem;
+    right: 0;
+}
