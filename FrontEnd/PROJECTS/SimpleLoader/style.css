@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#loader {
+    height: 100px;
+    width: 100px;
+    border: 8px solid red;
+    border-top: 8px solid black;
+    border-radius: 50%;
+    animation: LoadAnimate 3s linear 0s infinite;
+} 
+
+@keyframes LoadAnimate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
