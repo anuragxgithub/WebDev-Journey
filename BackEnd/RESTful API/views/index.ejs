@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quora</title>
+    <link rel="stylesheet" href="/style.css">  
+</head>
+<body>
+    <h1 class="heading">Quora Posts</h1>
+    <% for(let post of posts) { %>
+        <div class="post"> 
+            <p class="username">@<%- post.username %></p>
+            <p class="post-content" ><%- post.content %></p>
+            <a href="http://localhost:3000/posts/<%-post.id%>">See Post</a>&nbsp; &nbsp;
+            <a href="http://localhost:3000/posts/<%-post.id%>/edit">Edit Post</a>
+            <form action="/posts/<%-post.id%>/?_method=DELETE" method="POST">
+                <button class="delete">Delete Post</button>
+            </form>  <!-- you could have also add event listener to this button using js and send req from there -->
+        </div>
+    <%}%>
+    <br>
+    <br>
+    <button class="create-post-btn"><a href="http://localhost:3000/posts/new">Create Post</a></button>
+</body>
+</html>

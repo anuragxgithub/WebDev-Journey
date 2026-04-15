@@ -1,6 +1,6 @@
 // Second Exampe to illustrate Microtask vs Macrotask
 console.log("start");
-setTimeout(() => {  // this(callback) will be transferred macrootask queue by web api
+setTimeout(() => {  // this(callback) will be transferred to macrootask queue by web api
     console.log("Timeout");
 }, 5000);
 

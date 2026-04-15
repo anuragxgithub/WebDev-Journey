@@ -1,0 +1,10 @@
+<!-- 
+Why <%- %> and not <%= %>?
+<%- %> → renders raw HTML
+<%= %> → escapes HTML (not suitable for includes) 
+-->
+
+<%- include("Includes/header.ejs") %>
+<body>
+    <%- include("Includes/footer.ejs") %>
+</body>

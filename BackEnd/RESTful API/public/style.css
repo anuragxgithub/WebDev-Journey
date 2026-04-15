@@ -1,0 +1,28 @@
+
+h1 {
+    color: maroon;
+}
+.post {
+    background-color: rgb(253, 209, 128);
+}
+.username {
+    font-style: italic;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.post {
+    padding: 1rem;
+    margin: 0.75rem;
+}
+.create-post-btn {
+    font-size: 1.2rem;
+    margin: 0.75rem;
+}
+
+textarea {
+    width: 400px;
+    height: 100px;
+}
+.delete {
+    margin-top: 0.5rem;
+}

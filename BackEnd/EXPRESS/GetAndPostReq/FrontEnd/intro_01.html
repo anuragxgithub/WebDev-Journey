@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET and POST Requests</title>
+</head>
+<body>
+    <h1>Get request form</h1>
+    <form action="http://localhost:3000/register" method="get">  <!-- By default 'file' protocol is used (by form since existing locally) to send req that is why specifying where(path) the data should go -->
+        <!-- name = key (variable name) used when submitting a form -->
+         <!-- The name attribute in HTML is mainly used to identify 'form elements' when data is sent to the 'server'. -->
+        <input type="text" placeholder="Enter username" name="user">
+        <input type="text" placeholder="Enter Password" name="password">
+        <button>Submit</button>
+    </form>
+    <hr>
+    <h1>Post request form</h1>
+    <form action="http://localhost:3000/register" method="post">
+        <input type="text" placeholder="Enter username" name="user">
+        <input type="text" placeholder="Enter Password" name="password">
+        <button>Submit</button>
+    </form>
+</body>
+</html>

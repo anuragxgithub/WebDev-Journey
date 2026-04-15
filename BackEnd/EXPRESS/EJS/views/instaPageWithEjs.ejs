@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Page</title>
+    <style>
+        button {
+            font-size: 2rem;
+            margin: 0.5rem;
+        }
+        .interaction {
+            font-size: 1.5rem;
+            margin: 1rem 1rem 1rem 0;
+        }
+        .interaction :nth-child(2) {
+            margin-left: 1rem;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+        }
+        .stats {
+            font-size: 1.2rem;
+            margin: 1rem 1rem 1rem 0;
+        }
+        .stats :nth-child(2) {
+            margin-left: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>This page belongs to @<%= data.name %></h1>
+    <button>Follow</button>
+    <button>Message</button>
+
+    <div class="interaction">
+        <span>Followers : <%= data.followers %></span>
+        <span>Following : <%= data.following %></span>
+    </div>
+    <hr>
+    
+    <div class="posts">
+        <% for(let post of data.posts) { %>
+            <img src="<%=post.image%>" alt="">
+            <div class="stats">
+                <span>Liks: <%= post.likes %></span>
+                <span>Comments: <%= post.comments %></span>
+            </div>
+            <hr>
+        <% } %>
+        
+    </div>
+    <hr>
+    
+
+</body>
+</html>
